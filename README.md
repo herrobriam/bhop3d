@@ -28,25 +28,25 @@ To use the built-in camera look logic, set the Camera property under the Control
 
 All code is commented to explain the export values, but for reference:
 - **Activity Controls**
-  - **look_enabled**: whether the player should be able to look around.
-  - **move_enabled**: whether the player should be able to move. NOTE: this does not freeze the player, only stop their ability to input new directions.
+  - **LookEnabled**: whether the player should be able to look around.
+  - **MoveEnabled**: whether the player should be able to move. NOTE: this does not freeze the player, only stop their ability to input new directions.
 - **Input Definitions**
-  - **sensitivity**: A multiplier for mouse input sensitivity. Allows setting the sensitivity on the X and Y axis independently.
-  - **move_forward/backward/left/right**: Action names (strings) for the basic movement inputs.
+  - **Sensitivity**: A multiplier for mouse input sensitivity. Allows setting the sensitivity on the X and Y axis independently.
+  - **forwards/backwards/left/right**: Action names (strings) for the basic movement inputs.
   - **jump**: Action name (string) for the jump input.
 - **Movement Variables**
-  - **gravity**: Self explanatory.
-  - **ground_accelerate**: How quickly to accelerate while on the ground.
-  - **air_accelerate**: How quickly to accelerate while in the air. Higher values mean more speed gained from air-strafing.
-  - **max_ground_velocity**: Maximum velocity on the ground. Not a hard cap; speed tends towards this value while grounded.
-  - **max_air_velocity**: As above but in the air.
-  - **jump_force**: Self explanatory.
-  - **friction**: Self explanatory.
-  - **bhop_frames**: How many frames a player can be grounded for while a bunnyhop can still be performed.
-  - **additive_bhop**: When enabled, player velocity converges to input direction. When disabled, velocity maintains a semi-constant offset from input direction (similar to some Source games, such as Counter Strike 2).
+  - **Gravity**: Self explanatory.
+  - **GroundAccelerate**: How quickly to accelerate while on the ground.
+  - **AirAccelerate**: How quickly to accelerate while in the air. Higher values mean more speed gained from air-strafing.
+  - **MaxGroundVelocity**: Maximum velocity on the ground. Not a hard cap; speed tends towards this value while grounded.
+  - **MaxAirVelocity**: As above but in the air.
+  - **JumpForce**: Self explanatory.
+  - **Friction**: Self explanatory.
+  - **BhopFrames**: How many frames a player can be grounded for while a bunnyhop can still be performed.
+  - **AdditiveBhop**: When enabled, player velocity converges to input direction. When disabled, velocity maintains a semi-constant offset from input direction (similar to some Source games, such as Counter Strike 2).
 - **Debug**
-  - **debug_mode_enabled**: Whether any assigned debug raycasts be updated each frame.
-  - **debug_wishdir_raycast**: The raycast to update to display the desired input direction.
-  - **debug_velocity_raycast**: The raycast to update to display the current velocity (sans the Y component).
+  - **DebugModeEnabled**: Whether any assigned debug raycasts be updated each frame.
+  - **DebugWishdirRaycast**: The raycast to update to display the desired input direction.
+  - **DebugVelocityRaycast**: The raycast to update to display the current velocity (sans the Y component).
 
 **A note about debug mode**: Very primitive, best used when only looking in a straight line.
